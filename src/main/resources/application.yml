@@ -1,0 +1,14 @@
+spring:
+  datasource:
+    url: jdbc:mysql://127.0.0.1:3306/mytest?useUnicode=true&characterEncoding=utf8&useSSL=true
+    username: root
+    password: liaojiaxi
+    driver-class-name: com.mysql.jdbc.Driver
+
+server:
+  port: 8080
+
+mybatis:
+  type-aliases-package: com.gahui.swagger.entity
+  mapper-locations: classpath:mapper/*.xml
+  config-location: classpath:mybatis-config.xml
